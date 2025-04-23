@@ -1,0 +1,9 @@
+names <- c("Mina", "Raju", "Mithu", "Lali")
+gender <- c("Female", "Male", "Female", "Female")
+age <- c(15, 12, 2, 3)
+is_human <- c(TRUE, TRUE, FALSE, FALSE)
+cartoon <- data.frame(names, gender, age, is_human)
+write.table(cartoon, "cartoon.csv", sep = ",", col.names = TRUE)
+df <- read.table("cartoon.csv", header = TRUE, sep = ",")
+df #create table
+str(df) #structure of `df`
