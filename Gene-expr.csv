@@ -1,0 +1,10 @@
+gene_expr <- data.frame(
+  genes = c("TP53", "BRCA1", "MYC", "EGFR", "GAPDH", "CDC2"),
+  sample1 = c(8.2, 6.1, 9.5, 7.0, 10.0, 12),
+  Sample2 = c(5.9, 3.9, 7.2, 4.8, 7.9, 9),
+  Sample3 = c(8.25, 6.15, 9.6, 7.1, 10.1, 11.9),
+  pathways = c("Apoptosis", "DNA Repair", "Cell Cycle", "Signaling", "Housekeeping", "Cell Division")
+)
+write.table(gene_expr, "gene_expr.csv", sep = ",", col.names = TRUE) 
+df
+str(df)
